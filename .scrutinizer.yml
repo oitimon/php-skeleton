@@ -14,7 +14,7 @@ build:
   tests:
     override:
       -
-        command: 'composer phpunit'
+        command: 'composer test'
         coverage:
           file: 'build/logs/clover.xml'
           format: 'clover'
