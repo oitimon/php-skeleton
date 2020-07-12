@@ -1,0 +1,8 @@
+language: php
+php:
+  - 7.4
+
+script:
+  - composer install
+  - composer test
+  - php travis/coverage-checker.php build/logs/clover.xml 80

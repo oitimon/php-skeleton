@@ -13,4 +13,12 @@ class ExampleTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertTrue(true);
     }
+
+    /**
+     * Test skeleton.
+     */
+    public function testSkeleton()
+    {
+        $this->assertEquals("Hello world!", (new SkeletonClass())->echoPhrase("Hello world!"));
+    }
 }
