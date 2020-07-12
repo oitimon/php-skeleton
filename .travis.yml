@@ -5,4 +5,4 @@ php:
 script:
   - composer install
   - composer test
-  - php coverage-checker.php build/clover.xml 75
+  - php coverage-checker.php build/logs/clover.xml 75
