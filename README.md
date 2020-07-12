@@ -2,9 +2,9 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]](https://travis-ci.org/github/oitimon/php-skeleton)
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
+[![Build Status](https://travis-ci.org/oitimon/php-skeleton.svg?branch=002-naming)](https://travis-ci.org/oitimon/php-skeleton)
+[![Coverage Status](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/coverage.png?b=002-naming)][link-scrutinizer]
+[![Quality Score](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/quality-score.png?b=002-naming)][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 **Note:** Replace ```Oleksandr``` ```oitimon``` ```https://github.com/oitimon``` ```yeremeyev.alexander@gmail.com``` ```oitimon``` ```php-skeleton``` `````` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
