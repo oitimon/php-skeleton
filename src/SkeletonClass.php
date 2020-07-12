@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace League\Skeleton;
+namespace Oitimon\PhpSkeleton;
 
 class SkeletonClass
 {

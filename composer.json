@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "oitimon/php-skeleton",
     "type": "library",
-    "description": ":package_description",
+    "description": "",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "oitimon",
+        "php-skeleton"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/oitimon/php-skeleton",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Oleksandr",
+            "email": "yeremeyev.alexander@gmail.com",
+            "homepage": "https://github.com/oitimon",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "Oitimon\\PhpSkeleton\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "Oitimon\\PhpSkeleton\\": "tests"
         }
     },
     "scripts": {
