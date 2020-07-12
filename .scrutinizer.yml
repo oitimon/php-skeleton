@@ -14,7 +14,7 @@ build:
   tests:
     override:
       -
-        command: 'phpunit'
+        command: 'composer phpunit'
         coverage:
           file: 'build/logs/clover.xml'
           format: 'clover'
@@ -35,4 +35,3 @@ tools:
     excluded_dirs:
       - tests
       - vendor
-
