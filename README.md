@@ -2,9 +2,9 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status](https://travis-ci.org/oitimon/php-skeleton.svg?branch=master)](https://travis-ci.org/oitimon/php-skeleton)
-[![Coverage Status](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/coverage.png?b=master)][link-scrutinizer]
-[![Quality Score](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/quality-score.png?b=master)][link-code-quality]
+[![Build Status](https://travis-ci.org/oitimon/php-skeleton.svg?branch=example)](https://travis-ci.org/oitimon/php-skeleton)
+[![Coverage Status](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/coverage.png?b=example)][link-scrutinizer]
+[![Quality Score](https://scrutinizer-ci.com/g/oitimon/php-skeleton/badges/quality-score.png?b=example)][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 **Note:** Replace ```Oleksandr Ieremeev (tim)``` ```oitimon``` ```https://github.com/oitimon``` ```email@email.com``` ```oitimon``` ```example``` ```Short description...``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
