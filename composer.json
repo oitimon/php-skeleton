@@ -1,18 +1,18 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "oitimon/example",
     "type": "library",
-    "description": ":package_description",
+    "description": "Short description...",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "oitimon",
+        "example"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/oitimon/example",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Oleksandr Ieremeev (tim)",
+            "email": "email@email.com",
+            "homepage": "https://github.com/oitimon",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "Oitimon\\Example\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "Oitimon\\Example\\": "tests"
         }
     },
     "scripts": {
