@@ -4,5 +4,5 @@ before_install:
   - docker-compose up --build -d php
 
 script:
-  - docker exec -it php-skeleton composer update
+  - docker exec -it php-skeleton composer test
   - docker exec -it php-skeleton php travis/coverage-checker.php build/logs/clover.xml 80
