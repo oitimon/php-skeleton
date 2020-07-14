@@ -1,8 +1,7 @@
 language: generic
 
 before_install:
-  - docker-compose up --build -d
-  - docker ps -a
+  - docker-compose up --build -d php
 
 script:
   - docker exec -it php-skeleton bash composer test && php travis/coverage-checker.php build/logs/clover.xml 80
