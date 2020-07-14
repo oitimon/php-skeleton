@@ -2,7 +2,7 @@ filter:
   paths:
     - src/*
 before_commands:
-  - 'composer install'
+  - 'composer install --optimize-autoloader'
 checks:
   php:
     code_rating: true

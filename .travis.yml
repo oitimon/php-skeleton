@@ -11,7 +11,7 @@ jobs:
       php:
         - 7.4
       script:
-        - composer install
+        - composer install --optimize-autoloader
         - composer test
         - php travis/coverage-checker.php build/logs/clover.xml 80
     - stage: build
