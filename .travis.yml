@@ -1,6 +1,7 @@
 stages:
   - test
   - build
+  #- deploy
 
 jobs:
   include:
@@ -14,7 +15,8 @@ jobs:
         - composer test
         - php travis/coverage-checker.php build/logs/clover.xml 80
     - stage: build
-      name: "Build and deploy"
+      name: "Build"
       language: generic
       before_install:
-        - docker-compose up --build -d php
+        - docker build .
+    # Deploy stage...
