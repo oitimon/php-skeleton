@@ -3,7 +3,7 @@ stages:
   - build
 
 test:
-  - stage: "Tests"
+  - stage: test
     name: "Unit Tests"
     language: php
     php:
@@ -14,7 +14,7 @@ test:
       - php travis/coverage-checker.php build/logs/clover.xml 80
 
 build:
-  - stage: "Build"
+  - stage: build
     name: "Build and deploy"
     language: generic
     before_install:
