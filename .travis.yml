@@ -1,6 +1,5 @@
 language: php
-#php:
-#  - 7.4
+
 services:
   - docker
 
@@ -8,6 +7,4 @@ before_install:
   docker build -t oitimon/php-skeleton .
 
 script:
-  - composer install
-  - composer test
-  - php travis/coverage-checker.php build/logs/clover.xml 80
+  - docker run --rm --interactive --tty --volume $PWD:/app composer update && composer test && php travis/coverage-checker.php build/logs/clover.xml 80
