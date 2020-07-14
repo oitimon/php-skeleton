@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  docker build -t oitimon/php-skeleton .
+  docker build -t php-skeleton .
 
 script:
-  - docker run --rm --interactive --tty --volume $PWD:/app composer update && composer test && php travis/coverage-checker.php build/logs/clover.xml 80
+  - docker exec -it php-skeleton bash composer test && php travis/coverage-checker.php build/logs/clover.xml 80
