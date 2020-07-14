@@ -3,7 +3,7 @@ version: '3'
 services:
   nginx:
     image: nginx:latest
-    container_name: skeleton-nginx
+    container_name: nginx-skeleton
     ports:
       - "8080:80"
     volumes:
