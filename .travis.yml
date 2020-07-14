@@ -2,20 +2,19 @@ stages:
   - test
   - build
 
-test:
-  - stage: test
-    name: "Unit Tests"
-    language: php
-    php:
-      - 7.4
-    script:
-      - composer install
-      - composer test
-      - php travis/coverage-checker.php build/logs/clover.xml 80
-
-build:
-  - stage: build
-    name: "Build and deploy"
-    language: generic
-    before_install:
-      - docker-compose up --build -d php
+jobs:
+  include:
+    - stage: test
+      name: "Unit Tests"
+      language: php
+      php:
+        - 7.4
+      script:
+        - composer install
+        - composer test
+        - php travis/coverage-checker.php build/logs/clover.xml 80
+    - stage: build
+      name: "Build and deploy"
+      language: generic
+      before_install:
+        - docker-compose up --build -d php
