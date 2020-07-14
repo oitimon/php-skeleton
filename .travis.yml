@@ -1,9 +1,21 @@
-language: generic
+stages:
+  - test
+  - build
 
-before_install:
-  - docker-compose up --build -d php
+test:
+  - stage: "Tests"
+    name: "Unit Tests"
+    language: php
+    php:
+      - 7.4
+    script:
+      - composer install
+      - composer test
+      - php travis/coverage-checker.php build/logs/clover.xml 80
 
-script:
-  - docker exec -it php-skeleton pecl install xdebug
-  - docker exec -it php-skeleton composer test
-  - docker exec -it php-skeleton php travis/coverage-checker.php build/logs/clover.xml 80
+build:
+  - stage: "Build"
+    name: "Build and deploy"
+    language: generic
+    before_install:
+      - docker-compose up --build -d php
