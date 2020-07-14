@@ -1,7 +1,7 @@
 language: generic
 
 before_install:
-  - docker-compose build
+  - docker-compose up
   - docker ps -a
 
 script:
