@@ -5,6 +5,6 @@ RUN apt-get update && apt-get install -y zip unzip
 
 WORKDIR /code
 COPY composer.* ./
-RUN composer install
+RUN composer install --optimize-autoloader --no-dev
 
 COPY . .
